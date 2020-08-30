@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/hungry.css">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="hungry.js"></script>
+  </head>
+
+  <body onload="setPage()">
+    <p id="name"></p>
+    <div id="display">
+        <input class="displayText" type="button" onclick="shuffle()" value="Nah, next">
+        <input class="displayText" type="button" onclick="openLink()" value= "Open in Yelp">
+    </div>
+    <div id="map"></div>
+    <p id="street"></p>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDamTghtJbIWz9VRTD3TBAZVekrWRH40Hc&callback=initMap"
+    async defer></script>
+  </body>
+</html>
