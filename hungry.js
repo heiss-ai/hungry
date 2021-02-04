@@ -13,7 +13,7 @@ var terms;
 function getFuud() {
     terms = document.getElementById("where").value;
     price = parseInt(document.getElementById("rng").value) + 1;
-    window.location.href = "map.html?city=" + terms + "&price=" + price;
+    window.location.href = "hungry/map.html?city=" + terms + "&price=" + price;
 }
 
 function getParam() {
