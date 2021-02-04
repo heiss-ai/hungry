@@ -41,6 +41,7 @@ function setPage() {
       },
       dataType: 'json',
       success: function (data) {
+        console.log(data);
         list = JSON.parse(data);
         listSize = list.businesses.length;
 
